@@ -8,9 +8,10 @@ public class HomeController {
 
 	@GetMapping("/home")
 	public String getHome() {
-		return "Hello world argo cd!!!!!!!! Test-2";
+		return "Hello world argo cd!!!!!!!! Test-3";
 	}
 	
-	
-	
 }
+	
+	
+	
