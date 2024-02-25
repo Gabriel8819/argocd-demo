@@ -16,7 +16,7 @@ spec:
     spec:
       project: argo-demo
       source:
-        repoURL: git@github.com:Gabriel8819/argocd-demo-ops.git 
+        repoURL: https://github.com/Gabriel8819/argocd-demo-ops.git 
         targetRevision: HEAD
         path: dev  
       destination:
