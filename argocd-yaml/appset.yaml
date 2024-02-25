@@ -10,6 +10,10 @@ spec:
         github:
           owner: gabriel8819
           repo: argocd-demo
+          labels: 
+            - argo-pull
+        requeueAfterSeconds: 20
+
   template:
     metadata:
       name: argocd-app-1
