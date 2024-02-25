@@ -16,9 +16,9 @@ spec:
     spec:
       project: argo-demo
       source:
-        repoURL: https://github.com/Gabriel8819/argocd-demo-ops.git
+        repoURL: git@github.com:Gabriel8819/argocd-demo-ops.git 
         targetRevision: HEAD
         path: dev  
       destination:
         server: https://kubernetes.default.svc
-        namespace: gab
+        namespace: default
