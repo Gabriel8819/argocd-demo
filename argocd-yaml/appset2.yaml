@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: cluster-addons
+  namespace: argocd
+spec:
+  goTemplate: true
+  goTemplateOptions: ["missingkey=error"]
+  generators:
+  - git:
+      repoURL: 
+      revision: HEAD
+      directories:
+      - path: 
+  template:
+    metadata:
+      name: 
+    spec:
+      project: "my-project"
+      source:
+        repoURL: https://github.com/Gabriel8819/argocd-demo-ops.git
+        targetRevision: HEAD
+        path: dev
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: default 
+      syncPolicy:
+        syncOptions:
+        - CreateNamespace=true
