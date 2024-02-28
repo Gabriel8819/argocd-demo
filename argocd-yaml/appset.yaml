@@ -10,7 +10,6 @@ spec:
         github:
           owner: gabriel8819
           repo: argocd-demo
-
   template:
     metadata:
       name: argocd-app-1
