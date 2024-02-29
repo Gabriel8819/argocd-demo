@@ -10,7 +10,7 @@ spec:
         github:
           owner: gabriel8819
           repo: argocd-demo
-      requeueAfterSeconds: 10
+            #    requeueAfterSeconds: 30
   template:
     metadata:
       name: argocd-app-1
